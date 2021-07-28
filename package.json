@@ -1,0 +1,21 @@
+{
+  "name": "blank_tailwind_css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./src/tailwind.css -o ./public/tailwind.css",
+    "prod": "NODE_ENV=production postcss ./src/tailwind.css -o ./public/tailwind.css",
+    "watch": "postcss src/tailwind.css -o public/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4",
+    "tailwindcss-animations": "^2.0.0",
+    "win-node-env": "^0.4.0"
+  }
+}
