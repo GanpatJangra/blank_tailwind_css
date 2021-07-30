@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss ./src/tailwind.css -o ./public/tailwind.css --verbose",
-    "watch": "postcss src/tailwind.css -o public/tailwind.css --watch --verbose",
+    "build": "set TAILWIND_MODE=watch&postcss ./src/tailwind.css -o ./public/tailwind.css -w --verbose",
     "prod": "NODE_ENV=production postcss ./src/tailwind.css -o ./public/tailwind.css --verbose"
   },
   "keywords": [],
