@@ -8,7 +8,8 @@
     "cssnano": "^5.0.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.4",
-    "tailwindcss-animations": "^2.0.0"
+    "tailwindcss-animations": "^2.0.0",
+    "win-node-env": "^0.4.0"
   },
   "scripts": {
     "build": "set TAILWIND_MODE=watch&postcss tailwind.css -o ./public/tailwind.css -w --verbose",
